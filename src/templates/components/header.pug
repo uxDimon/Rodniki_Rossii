@@ -39,15 +39,16 @@ header.header-wrap
                                     use(xlink:href="./assets/images/sprite.svg#icon-knr")
 
                 .header__body-bot
-                    a(href="#").button.button_ghost Родники поблизости
-                    a(href="#").button.button_ghost Подписка на рассылку
+                    .header__body-bot-button-wrap
+                        a(href="#").button.button_ghost Родники поблизости
+                        a(href="#").button.button_ghost Подписка на рассылку
                     
                     form.header__search
                         label.header__search-label
-                            input(type="search", name="").header__search-input
-                            button(type="submit").header__search-button
-                                svg
-                                    use(xlink:href="./assets/images/sprite.svg#icon-search")
+                            svg
+                                use(xlink:href="./assets/images/sprite.svg#icon-search")
+                            input(type="search", name="" placeholder="Поиск").header__search-input
+                            //- button(type="submit").header__search-button
         nav.header__menu
             ul.header__menu-list
                 li.header__menu-item
@@ -55,11 +56,11 @@ header.header-wrap
                 li.header__menu-item
                     a(href="#").header__menu-linc Родники 
                 li.header__menu-item
-                    a(href="#").header__menu-linc Зарегистрировать свой родник
+                    a(href="#").header__menu-linc Зарегистрировать <br>свой родник
                 li.header__menu-item
-                    a(href="#").header__menu-linc Полезная информация
+                    a(href="#").header__menu-linc Полезная <br>информация
                 li.header__menu-item
-                    a(href="#").header__menu-linc Выставкии конференции
+                    a(href="#").header__menu-linc Выставки <br>и конференции
                 li.header__menu-item
                     a(href="#").header__menu-linc Контакты
 
