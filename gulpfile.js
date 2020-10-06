@@ -84,7 +84,7 @@ function images() {
 					svgoPlugins: [{ removeViewBox: false }],
 					use: [pngquant()],
 					max: 90,
-					min: 70,
+					min: 80,
 				})
 			)
 		)
