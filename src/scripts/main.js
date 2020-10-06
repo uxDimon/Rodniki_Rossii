@@ -56,7 +56,8 @@ if (document.querySelector(".slider-main")) {
 		mouseDrag: true,
 		speed: 400,
 		controls: false,
-		// autoplay: true,
+		autoplay: true,
+		autoplayButtonOutput: false,
 	});
 }
 

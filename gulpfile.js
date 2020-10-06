@@ -55,8 +55,7 @@ function styles() {
 		.src("./src/styles/app.scss")
 		.pipe(sourcemaps.init())
 		.pipe(sass(/*{ outputStyle: "compressed" }*/))
-		.pipe(autoprefixer(["last 2 version", "> 1%", "maintained node versions", "not dead" /*"last 15 versions", "> 1%" , "ie 8", "ie 7"*/], { cascade: true })) // Создаем префиксы
-		.pipe(sourcemaps.write())
+		.pipe(autoprefixer(["last 2 version", "> 1%", "maintained node versions", "not dead", "ie 11"], { cascade: true })) // Создаем префиксы
 		.pipe(rename({ suffix: ".min" }))
 		.pipe(gulp.dest(paths.styles.dest));
 }

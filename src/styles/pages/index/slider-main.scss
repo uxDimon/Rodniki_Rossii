@@ -47,7 +47,7 @@
 	height: 100%;
 	position: relative;
 	overflow: hidden;
-	height: 700px;
+	// height: 700px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -65,7 +65,7 @@
 }
 
 .slider-main__img {
-	position: absolute;
+	// position: absolute;
 	display: block;
 	width: 100%;
 	height: auto;
@@ -74,7 +74,9 @@
 
 .slider-main__text {
 	position: absolute;
+	left: 50%;
 	top: 100px;
+	transform: translateX(-50%);
 	display: inline-block;
 	width: 100%;
 	max-width: 1280px;

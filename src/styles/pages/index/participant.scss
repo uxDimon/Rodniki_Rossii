@@ -1,0 +1,44 @@
+.participant {
+	display: flex;
+}
+
+.participant__item {
+	margin-right: 48px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.participant__ava-wrap {
+	display: flex;
+	margin-bottom: 38px;
+}
+
+.participant__ava {
+	width: 160px;
+	height: 160px;
+	border-radius: 100px;
+	margin-right: 38px;
+}
+
+.participant__ava-text {
+	display: flex;
+	flex-direction: column;
+	margin-top: 22px;
+}
+
+.participant__ava-name {
+	font-size: 18px;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.participant__ava-date {
+	font-size: 12px;
+	color: $color-black-light;
+}
+
+.participant__text {
+	font-weight: bold;
+}

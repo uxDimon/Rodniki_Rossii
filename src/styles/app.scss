@@ -26,7 +26,8 @@ body {
 	padding: 0;
 	font-family: $font-Open-Sans;
 	font-weight: normal;
-	line-height: 1.2;
+	line-height: 1.4;
+	font-size: 16px;
 }
 
 a {
@@ -71,12 +72,38 @@ main,
 	max-width: 1280px;
 }
 
+.content-box {
+	margin-top: 68px;
+	margin-bottom: 68px;
+}
+
+.category-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 56px;
+}
+
+.category-button__text {
+	position: absolute;
+	left: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.nam-area {
+	font-weight: normal;
+	font-size: 28px;
+	margin: 0 0 8px 0;
+}
+
 // Кнопки
 .button {
 	font-family: $font-Open-Sans;
 	font-weight: 600;
 	font-size: 18px;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
@@ -108,9 +135,32 @@ main,
 	}
 }
 
+.star-rating {
+	display: flex;
+
+	&[data-srar="1"] > .star-rating-item:nth-of-type(-n + 1),
+	&[data-srar="2"] > .star-rating-item:nth-of-type(-n + 2),
+	&[data-srar="3"] > .star-rating-item:nth-of-type(-n + 3),
+	&[data-srar="4"] > .star-rating-item:nth-of-type(-n + 4),
+	&[data-srar="5"] > .star-rating-item:nth-of-type(-n + 5) {
+		background-image: url("../images/star-on.svg");
+	}
+}
+
+.star-rating-item {
+	width: 40px;
+	height: 35px;
+	background-image: url("../images/star-off.svg");
+	background-position: center;
+	margin-right: 12px;
+}
+
 @import "./common/header.scss";
 
 @import "./pages/index/slider-main.scss";
+@import "./pages/index/participant.scss";
+
+@import "./common/list-card.scss";
 
 @import "./common/footer.scss";
 
