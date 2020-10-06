@@ -48,6 +48,13 @@ br {
 	display: block;
 }
 
+.header-wrap,
+.footer-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .content-w {
 	width: 100%;
 	max-width: 1280px;
