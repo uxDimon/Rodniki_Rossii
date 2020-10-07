@@ -249,6 +249,11 @@ button[data-play] {
 	z-index: 2;
 }
 
+// fix: куда нибудь всунь
+.katalog-rodnikov-page__cards {
+	margin-bottom: 68px;
+}
+
 @import "./common/header.scss";
 
 @import "./pages/index/slider-main.scss";
