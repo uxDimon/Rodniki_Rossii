@@ -142,6 +142,25 @@ main,
 	}
 }
 
+// Пагинация
+.pagination {
+	display: flex;
+}
+
+.paginatio {
+	margin-right: 6px;
+	display: inline-block;
+	padding: 2px 6px;
+
+	a {
+		color: $color-black;
+	}
+}
+
+.paginatio_active {
+	background-color: $color-black-light;
+}
+
 // Кнопки
 .button {
 	font-family: $font-Open-Sans;
@@ -229,6 +248,7 @@ button[data-play] {
 @import "./pages/index/slider-main.scss";
 @import "./pages/index/participant.scss";
 @import "./pages/o-proyekte.scss";
+@import "./pages/search.scss";
 
 @import "./common/list-card.scss";
 

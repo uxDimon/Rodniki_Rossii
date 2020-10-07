@@ -1,0 +1,49 @@
+extends ../template
+
+block variables
+    - var title = 'поиск'
+
+block content
+    main
+        .content-w.search
+            form.search__inputs
+                input(type="search", name="" placeholder= 'Найти')
+                button(type="submit") Найти
+            .search__get
+                .search__total
+                    span Нашлось 
+                    span 214
+                    span  ответов
+
+                .search__list
+                    a(href="#").search__list-item
+                        span.search__list-text Родник сергея Радонежского - это один из самых красивых ...
+                        span.search__list-url rodnikirossi.ru/ru/rodniki/rodnik_01
+                    a(href="#").search__list-item
+                        span.search__list-text Родник сергея Радонежского - это один из самых красивых ...
+                        span.search__list-url rodnikirossi.ru/ru/rodniki/rodnik_01
+                    a(href="#").search__list-item
+                        span.search__list-text Родник сергея Радонежского - это один из самых красивых ...
+                        span.search__list-url rodnikirossi.ru/ru/rodniki/rodnik_01
+                    a(href="#").search__list-item
+                        span.search__list-text Родник сергея Радонежского - это один из самых красивых ...
+                        span.search__list-url rodnikirossi.ru/ru/rodniki/rodnik_01
+                    a(href="#").search__list-item
+                        span.search__list-text Родник сергея Радонежского - это один из самых красивых ...
+                        span.search__list-url rodnikirossi.ru/ru/rodniki/rodnik_01
+
+            ul.pagination.search__pagination
+                li.paginatio 
+                    a(href="#") <
+                li.paginatio 
+                    a(href="#") 1
+                li.paginatio.paginatio_active
+                    a(href="#") 2
+                li.paginatio 
+                    a(href="#") 3
+                li.paginatio 
+                    a(href="#") 4
+                li.paginatio 
+                    a(href="#") ...
+                li.paginatio 
+                    a(href="#") >
