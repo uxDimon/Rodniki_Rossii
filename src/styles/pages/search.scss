@@ -58,6 +58,12 @@
 .search__list-text {
 	font-size: 20px;
 	color: $color-black;
+	margin-bottom: 8px;
+}
+
+.search__list-distance {
+	color: $color-black-light;
+	margin-bottom: 8px;
 }
 
 .search__list-url {
@@ -66,4 +72,8 @@
 
 .search__pagination {
 	margin-bottom: 64px;
+}
+
+.rodniki-poblizosti__map {
+	margin-bottom: 44px;
 }
