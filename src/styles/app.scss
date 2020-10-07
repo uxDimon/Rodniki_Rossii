@@ -38,6 +38,18 @@ a {
 	}
 }
 
+p {
+	margin: 10px 0;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -98,6 +110,38 @@ main,
 	margin: 0 0 8px 0;
 }
 
+// Хлебные крошки
+.bread-crumbs {
+	display: flex;
+	margin: 30px 0;
+}
+
+.bread-crumbs__item {
+	display: flex;
+	align-items: center;
+	color: $color-blue-light;
+
+	* {
+		color: $color-blue-light;
+		font-weight: normal;
+		font-size: 14px;
+	}
+
+	&::after {
+		content: "→";
+		margin: -2px 8px 0 8px;
+		display: block;
+	}
+
+	&:hover::after {
+		text-decoration: none;
+	}
+
+	&:last-child::after {
+		content: none;
+	}
+}
+
 // Кнопки
 .button {
 	font-family: $font-Open-Sans;
@@ -155,10 +199,36 @@ main,
 	margin-right: 12px;
 }
 
+// Кнопка для видео
+.video-wrap {
+	position: relative;
+
+	video {
+		z-index: 1;
+	}
+}
+
+button[data-play] {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	background-image: url("../images/icon-play-video.svg");
+	cursor: pointer;
+	z-index: 2;
+}
+
 @import "./common/header.scss";
 
 @import "./pages/index/slider-main.scss";
 @import "./pages/index/participant.scss";
+@import "./pages/o-proyekte.scss";
 
 @import "./common/list-card.scss";
 

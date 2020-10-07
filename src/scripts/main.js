@@ -187,3 +187,46 @@ if (document.querySelector(".slider-main")) {
 // 		cookiesBlock.classList.add("cookies__close-none");
 // 	});
 // }
+
+// Кнопка для видео
+const videoWrap = document.querySelectorAll(".video-wrap"),
+	playB = "<button data-play></button>";
+
+// videoWrap.forEach(function (item) {
+// 	console.log(item);
+// 	item.insertAdjacentHTML("beforeend", playB);
+// 	const video = item.querySelector("video");
+// 	const buttonP = item.querySelector("button[data-play]");
+
+// 	buttonP.addEventListener("click", function () {
+// 		video.play();
+// 		console.log("1");
+// 	});
+// 	video.addEventListener("play", function () {
+// 		buttonP.style.opacity = 0;
+// 		video.setAttribute("controls", "controls");
+// 	});
+// 	video.addEventListener("ended", function () {
+// 		buttonP.style.opacity = 1;
+// 		video.removeAttribute("controls");
+// 	});
+// });
+
+for (const vw of videoWrap) {
+	vw.insertAdjacentHTML("beforeend", playB);
+	const video = vw.querySelector("video");
+	const buttonP = vw.querySelector("button[data-play]");
+
+	buttonP.addEventListener("click", () => {
+		video.play();
+		console.log("1");
+	});
+	video.addEventListener("play", () => {
+		buttonP.style.opacity = 0;
+		video.setAttribute("controls", "controls");
+	});
+	video.addEventListener("ended", () => {
+		buttonP.style.opacity = 1;
+		video.removeAttribute("controls");
+	});
+}

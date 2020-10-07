@@ -1,0 +1,89 @@
+extends ../template
+
+block variables
+    - var title = 'О проекте'
+
+block content
+    main.o-proyekte
+        section.slider-main__wrap
+            .slider-main
+                .slider-main__item
+                    span.slider-main__text Отличительная черта всех наших блюд то, что они готовятся просто, без изысков, в традициях обычных жителей деревни.
+                    img(src="./assets/images/img-1.jpg", alt="Родники России").slider-main__img
+                .slider-main__item
+                    span.slider-main__text Отличительная черта всех наших блюд то, что они готовятся просто, без изысков, в традициях обычных жителей деревни.
+                    img(src="./assets/images/img-1.jpg", alt="Родники России").slider-main__img
+                .slider-main__item
+                    span.slider-main__text Отличительная черта всех наших блюд то, что они готовятся просто, без изысков, в традициях обычных жителей деревни.
+                    img(src="./assets/images/img-1.jpg", alt="Родники России").slider-main__img
+
+        include ../components/bread-crumbs.pug
+        
+        section.o-proyekte__text.content-w
+            p Вода в родниках из артезианских скважин холодная,чистая,свежая.
+            p Данные обстоятельства связаны с тем,что родниковые воды располагаются  глубоко под землей.Обычно глубина водоносных слоев родниковых вод составляет 10-20 метров,но иногда и более того.Чистота родниковой воды обуславливается двумя главными факторами:<br>
+                | Во-первых загрязняющие вещества с поверхности земли на  большую глубину водоносных слоев родниковых вод почти не попадают. <br>
+                | Во-вторых вода фильтруется,когда проходит большое расстояние  под землей через многие слои гравия и песка до того как ей выйти на поверхность.
+            p  Существуют и другие плюсы родниковой воды:<br>
+                | -Родниковую воду не обрабатывают хлором и озоном,такая вода не содержит примесей и добавок.<br>
+                | -В родниковой воде большое содержание кислорода.<br>
+                | -Родниковая вода из артезианских скважин как правило лишена болезнетворных бактерий,её не следует подвергать кипячению.
+            p В родниковой воде бактерии не размножаются,так как температура такой воды низкая.Температура у источника родниковой воды до 6 градусов по Цельсию с плюсом. Вода из источника может быть как пресной, так и минерализованной.
+
+        section.o-proyekte__number.main-number__wrap
+            .content-w.main-number
+                .main-number__item
+                    span.main-number__number 85
+                    span.main-number__name Cубъектов РФ
+                .main-number__item
+                    span.main-number__number 498
+                    span.main-number__name Родников
+                .main-number__item
+                    span.main-number__number 5 470
+                    span.main-number__name Участников проекта
+        
+        section.o-proyekte__video
+            .video-wrap
+                video
+                    source(src="./assets/images/v1.mp4" type="video/mp4")
+        
+        section.o-proyekte__fichi.fichi.content-w
+            .fichi__item
+                img(src="./assets/images/icon-car.svg", alt="Местоположения").fichi__img
+                .fichi__text-wrap
+                    span.fichi__name Местоположения
+                    span.fichi__text GPS координаты родника и варианты транспортного сообщения
+            .fichi__item
+                img(src="./assets/images/icon-history.svg", alt="История").fichi__img
+                .fichi__text-wrap
+                    span.fichi__name История
+                    span.fichi__text Прошлое родника, интересные и полезные факты
+            .fichi__item
+                img(src="./assets/images/icon-chemistry.svg", alt="Химичский анализ").fichi__img
+                .fichi__text-wrap
+                    span.fichi__name Химичский анализ 
+                    span.fichi__text Точная информация о составе и свойствах воды
+
+        section.o-proyekte__img-linc.img-linc.content-w
+            a(href="#").img-linc__item
+                img(src="./assets/images/img-1.jpg", alt="Tуристические маршруты").img-linc__img
+                span.img-linc__name Tуристические маршруты
+                span.img-linc__text Пешие и автомаршруты
+            a(href="#").img-linc__item
+                img(src="./assets/images/img-1.jpg", alt="Подписки").img-linc__img
+                span.img-linc__name Подписки
+                span.img-linc__text Получайте свежую информацию
+            a(href="#").img-linc__item
+                img(src="./assets/images/img-1.jpg", alt="Блог").img-linc__img
+                span.img-linc__name Блог
+                span.img-linc__text Читайте познователфьные статьи о родниковой воде
+                
+        section.o-proyekte__pdf.pdf-download.content-w
+            .pdf-download__item
+                img(src="./assets/images/img-2.png", alt="Каталог").pdf-download__img
+                a(href="#").button.button_ghost Посмотреть каталог
+            .pdf-download__item
+                img(src="./assets/images/img-3.png", alt="Журнал").pdf-download__img
+                a(href="#").button.button_ghost Посмотреть журнал
+
+
