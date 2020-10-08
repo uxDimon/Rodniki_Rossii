@@ -61,26 +61,18 @@ if (document.querySelector(".slider-main")) {
 	});
 }
 
-// if (document.querySelector(".other-public__slider")) {
-// 	var injury = tns({
-// 		container: ".other-public__slider",
-// 		gutter: 24,
-// 		items: 1,
-// 		mouseDrag: true,
-// 		autoWidth: true,
-// 		loop: false,
-// 		speed: 300,
-// 		controlsText: ["", ""],
-// 		nav: false,
-// 		navPosition: "bottom",
-// 		responsive: {
-// 			768: {
-// 				items: 2,
-// 				gutter: 64,
-// 			},
-// 		},
-// 	});
-// }
+if (document.querySelector(".springs-page__slider")) {
+	var injury = tns({
+		container: ".springs-page__slider",
+		gutter: 30,
+		items: 3,
+		mouseDrag: true,
+		loop: false,
+		speed: 300,
+		nav: false,
+		controlsText: ["", ""],
+	});
+}
 
 // if (document.querySelector(".gem-wiki__slider")) {
 // 	var injury = tns({
@@ -149,11 +141,11 @@ if (document.querySelector(".slider-main")) {
 // 	new Accordion(".footer__accordion");
 // }
 
-// // Увеличения картинок
-// // https://github.com/francoischalifour/medium-zoom
-// mediumZoom("[data-zoomable]", {
-// 	background: "#d9e2ec",
-// });
+// Увеличения картинок
+// https://github.com/francoischalifour/medium-zoom
+mediumZoom("[data-zoomable]", {
+	margin: 24,
+});
 
 // // popup
 // const pooupBut = document.querySelectorAll(".popup-open");
@@ -212,21 +204,21 @@ const videoWrap = document.querySelectorAll(".video-wrap"),
 // 	});
 // });
 
-for (const vw of videoWrap) {
-	vw.insertAdjacentHTML("beforeend", playB);
-	const video = vw.querySelector("video");
-	const buttonP = vw.querySelector("button[data-play]");
+// for (const vw of videoWrap) {
+// 	vw.insertAdjacentHTML("beforeend", playB);
+// 	const video = vw.querySelector("video");
+// 	const buttonP = vw.querySelector("button[data-play]");
 
-	buttonP.addEventListener("click", () => {
-		video.play();
-		console.log("1");
-	});
-	video.addEventListener("play", () => {
-		buttonP.style.opacity = 0;
-		video.setAttribute("controls", "controls");
-	});
-	video.addEventListener("ended", () => {
-		buttonP.style.opacity = 1;
-		video.removeAttribute("controls");
-	});
-}
+// 	buttonP.addEventListener("click", () => {
+// 		video.play();
+// 		console.log("1");
+// 	});
+// 	video.addEventListener("play", () => {
+// 		buttonP.style.opacity = 0;
+// 		video.setAttribute("controls", "controls");
+// 	});
+// 	video.addEventListener("ended", () => {
+// 		buttonP.style.opacity = 1;
+// 		video.removeAttribute("controls");
+// 	});
+// }

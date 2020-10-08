@@ -1,0 +1,105 @@
+extends ../template
+
+block variables
+    - var title = 'Родники Сергея Радонежского'
+
+block content
+    main
+        .content-w.springs-page
+            include ../components/bread-crumbs.pug
+
+            h1.page-heading-1 Родники Сергея Радонежского
+            
+            .springs-page__slider-wrap
+                .springs-page__slider
+                    img(src="./assets/images/img-1.jpg", alt="Родники Сергея Радонежского" data-zoomable).springs-page__slider-item
+                    img(src="./assets/images/img-1.jpg", alt="Родники Сергея Радонежского" data-zoomable).springs-page__slider-item
+                    img(src="./assets/images/img-1.jpg", alt="Родники Сергея Радонежского" data-zoomable).springs-page__slider-item
+                    img(src="./assets/images/img-1.jpg", alt="Родники Сергея Радонежского" data-zoomable).springs-page__slider-item
+                    img(src="./assets/images/img-1.jpg", alt="Родники Сергея Радонежского" data-zoomable).springs-page__slider-item
+            
+            section.springs-page__audio
+                audio(controls)
+                    <source src="./assets/images/springs1.mp3" type="audio/mpeg">
+                span.springs-page__audio-text Звук родника
+
+            section.springs-page__text-wrap
+                h2.springs-page__text-heading Адрес
+                p.springs-page__text 
+                    span Архангельская область, 
+                    span Котласский муниципальный район 
+                    span Городское поселение Приводинское 
+                    span деревня Варнавино
+
+            
+            section.springs-page__text-wrap
+                h2.springs-page__text-heading GPS координаты
+                p.springs-page__text 
+                    span Широта: 57.1051300°
+                    span Долгота: 41.7304800°
+
+            section.springs-page__text-wrap
+                h2.springs-page__text-heading История
+                p.springs-page__text По легенде[4], водопад возник благодаря молитве Сергия Радонежского. Ныне подходы к водопаду благоустроены, сооружена купель, храм и часовня, по склонам установлены лестницы[3]. Водопад является местом паломничества, а также популярным туристическим объектом. Название «гремячий» означает «шумный» или просто «родник, источник»[2]. Гремячими славяне называли источники, образованные на месте удара молнии[5].
+            
+            section.springs-page__text-wrap
+                h2.springs-page__text-heading Транспорт
+                p.springs-page__text Добраться до Гремячего ключа можно на электричке до станции Сергиев Посад, далее автобусом до деревни Шильцы, далее пешком — 3 км
+            
+            section.springs-page__text-wrap
+                h2.springs-page__text-heading Химический анализ родниковой воды
+                img(src="./assets/images/img-4.png", alt="" data-zoomable).springs-page__text-img
+            
+            section.springs-page__text-wrap
+                h2.springs-page__text-heading Рейтинг родника
+                div(data-srar='1').star-rating
+                    .star-rating-item
+                    .star-rating-item
+                    .star-rating-item
+                    .star-rating-item
+                    .star-rating-item
+                    span.star-rating-number 24
+            
+            .springs-page__comments-wrap
+                form.springs-page__comments-add.add-comment
+                    h2.add-comment__heading Ваш рейтинг родника
+                    
+                    .add-comment__star-wrap
+                        input(type="radio", name="star" value='1')#radio-star-1
+                        input(type="radio", name="star" value='2')#radio-star-2
+                        input(type="radio", name="star" value='3')#radio-star-3
+                        input(type="radio", name="star" value='4')#radio-star-4
+                        input(type="radio", name="star" value='5')#radio-star-5
+                        label(for='radio-star-1').add-comment__star
+                        label(for='radio-star-2').add-comment__star
+                        label(for='radio-star-3').add-comment__star
+                        label(for='radio-star-4').add-comment__star
+                        label(for='radio-star-5').add-comment__star
+                    
+                    label.add-comment__input
+                        input(type="text", name="name" placeholder='Введите Ваше имя')
+                    
+                    label.add-comment__input
+                        textarea(name="comment", placeholder='Напишите Ваш отзыв')
+                    
+                    button(type="submit").button.add-comment__button Отправить
+
+                section.springs-page__comments
+                    span.springs-page__comments-name Иван
+                    span.springs-page__comments-date 7 июля 2020
+                    p.springs-page__comments-text По легенде[4], водопад возник благодаря молитве Сергия Радонежского. Ныне подходы к водопаду благоустроены, сооружена купель, храм и часовня, по склонам установлены лестницы[3]. Водопад является местом паломничества, а также популярным туристическим объектом. Название «гремячий» означает «шумный» или просто «родник, источник»[2]. Гремячими славяне называли источники, образованные на месте удара молнии[5].
+                
+                section.springs-page__comments
+                    span.springs-page__comments-name Иван
+                    span.springs-page__comments-date 7 июля 2020
+                    p.springs-page__comments-text По легенде[4], водопад возник благодаря молитве Сергия Радонежского. Ныне подходы к водопаду благоустроены, сооружена купель, храм и часовня, по склонам установлены лестницы[3]. Водопад является местом паломничества, а также популярным туристическим объектом. Название «гремячий» означает «шумный» или просто «родник, источник»[2]. Гремячими славяне называли источники, образованные на месте удара молнии[5].
+                
+                section.springs-page__comments
+                    span.springs-page__comments-name Иван
+                    span.springs-page__comments-date 7 июля 2020
+                    p.springs-page__comments-text По легенде[4], водопад возник благодаря молитве Сергия Радонежского. Ныне подходы к водопаду благоустроены, сооружена купель, храм и часовня, по склонам установлены лестницы[3]. Водопад является местом паломничества, а также популярным туристическим объектом. Название «гремячий» означает «шумный» или просто «родник, источник»[2]. Гремячими славяне называли источники, образованные на месте удара молнии[5].
+
+
+
+
+

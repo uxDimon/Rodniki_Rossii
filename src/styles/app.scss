@@ -167,6 +167,15 @@ main,
 	background-color: $color-black-light;
 }
 
+// Увеличения картинок
+.medium-zoom-overlay {
+	z-index: 99;
+}
+
+.medium-zoom-image--opened {
+	z-index: 100;
+}
+
 // Кнопки
 .button {
 	font-family: $font-Open-Sans;
@@ -269,6 +278,7 @@ button[data-play] {
 @import "./pages/index/participant.scss";
 @import "./pages/o-proyekte.scss";
 @import "./pages/search.scss";
+@import "./pages/springs-page.scss";
 
 @import "./common/list-card.scss";
 

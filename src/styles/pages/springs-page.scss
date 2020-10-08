@@ -1,0 +1,161 @@
+.springs-page__slider-wrap {
+	padding: 0 40px;
+	position: relative;
+	margin-bottom: 32px;
+
+	.tns-controls {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: space-between;
+		transform: translateY(-50%);
+
+		button {
+			width: 20px;
+			height: 80px;
+			background-image: url("../images/arrow.svg");
+			background-color: transparent;
+			background-position: center;
+			background-repeat: no-repeat;
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		button[data-controls="next"] {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.springs-page__slider-item {
+	min-height: 250px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.springs-page__audio {
+	margin-bottom: 32px;
+}
+
+.springs-page__audio-text {
+	display: block;
+	color: $color-black-light;
+}
+
+.springs-page__text-wrap {
+	margin-bottom: 68px;
+
+	.star-rating {
+		max-width: 350px;
+	}
+}
+
+.springs-page__text-heading {
+	font-size: 22px;
+	font-weight: normal;
+	margin: 0 0 16px;
+}
+
+.springs-page__text {
+	color: $color-black-light;
+	margin: 0;
+
+	> span {
+		display: block;
+	}
+}
+
+.springs-page__text-img {
+	max-height: 400px;
+	width: auto;
+}
+
+.add-comment {
+	border: 1px solid $color-black-light;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 68px;
+}
+
+.add-comment__heading {
+	font-size: 36px;
+	font-weight: 600;
+	margin: 0 0 18px 0;
+}
+
+.add-comment__star-wrap {
+	align-self: center;
+	margin-bottom: 18px;
+	display: flex;
+
+	input[value="1"]:checked ~ label:nth-of-type(-n + 1),
+	input[value="2"]:checked ~ label:nth-of-type(-n + 2),
+	input[value="3"]:checked ~ label:nth-of-type(-n + 3),
+	input[value="4"]:checked ~ label:nth-of-type(-n + 4),
+	input[value="5"]:checked ~ label:nth-of-type(-n + 5) {
+		background-image: url("../images/star-on.svg");
+	}
+
+	input {
+		display: none;
+	}
+}
+
+.add-comment__star {
+	width: 40px;
+	height: 35px;
+	background-image: url("../images/star-off.svg");
+	background-position: center;
+	margin-right: 12px;
+	flex-shrink: 0;
+	display: block;
+	cursor: pointer;
+}
+
+.add-comment__input {
+	margin-bottom: 18px;
+
+	textarea,
+	input {
+		width: 100%;
+		padding: 6px 16px;
+		border: 1px solid $color-black-light;
+		border-radius: 8px;
+		font-family: $font-Open-Sans;
+		font-weight: normal;
+		font-size: 22px;
+	}
+
+	textarea {
+		height: 200px;
+		min-height: 200px;
+		max-height: 400px;
+		resize: vertical;
+	}
+}
+
+.add-comment__button {
+	align-self: flex-end;
+}
+
+.springs-page__comments {
+	margin-bottom: 68px;
+}
+
+.springs-page__comments-name {
+	font-size: 20px;
+	margin-right: 18px;
+}
+
+.springs-page__comments-date {
+	color: $color-black-light;
+	font-size: 14px;
+}
+
+.springs-page__comments-text {
+	margin: 8px 0 0 0;
+}
