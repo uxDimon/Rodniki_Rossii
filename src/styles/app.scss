@@ -206,6 +206,7 @@ main,
 
 .star-rating {
 	display: flex;
+	align-items: center;
 
 	&[data-srar="1"] > .star-rating-item:nth-of-type(-n + 1),
 	&[data-srar="2"] > .star-rating-item:nth-of-type(-n + 2),
@@ -222,6 +223,14 @@ main,
 	background-image: url("../images/star-off.svg");
 	background-position: center;
 	margin-right: 12px;
+	flex-shrink: 0;
+}
+
+.star-rating-number {
+	font-size: 18px;
+	color: $color-black-light;
+	width: 100%;
+	text-align: right;
 }
 
 // Кнопка для видео
