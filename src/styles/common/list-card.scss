@@ -70,3 +70,23 @@
 	margin: 0;
 	color: $color-black-light;
 }
+
+.cards_photo {
+	position: relative;
+
+	.cards__items-img {
+		min-height: 350px;
+	}
+
+	.cards__photo-text {
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		left: 10px;
+		text-align: center;
+		font-size: 22px;
+		font-weight: 600;
+		color: $color-white;
+		text-shadow: 0 0 10px #000, 0 0 20px #000;
+	}
+}
