@@ -1,0 +1,50 @@
+extends ../template
+
+block variables
+    - var title = 'Наша команда'
+
+block content
+    main
+        .content-w.contacts
+            include ../components/bread-crumbs.pug
+
+            h1.page-heading-1 Наша команда
+
+            .contacts__person-wrap
+                .contacts__person
+                    img(src="./assets/images/contacts-1.png", alt="Алексей Шабуров").contacts__person-img
+                    span.contacts__person-name Алексей Шабуров
+                    span.contacts__person-position Руководитель проекта
+                    a(href="tel:+74959952824").contacts__person-tel +7 495 995-28-24
+                    a(href="mailto:alexey.shaburov@sokolniki.com").contacts__person-mall alexey.shaburov@sokolniki.com
+                .contacts__person
+                    img(src="./assets/images/contacts-2.png", alt="Алексей Харюткин").contacts__person-img
+                    span.contacts__person-name Алексей Харюткин
+                    span.contacts__person-position Менеджер проекта
+                    a(href="tel:+79163532109").contacts__person-tel +7 916 353-21-09
+                    a(href="mailto:harutkin_av@sokolniki.com").contacts__person-mall harutkin_av@sokolniki.com
+                .contacts__person
+                    img(src="./assets/images/contacts-3.png", alt="Мария Томилова").contacts__person-img
+                    span.contacts__person-name Мария Томилова
+                    span.contacts__person-position Пресс-секретарь
+                    a(href="tel:+").contacts__person-tel +7 915 340-09-86
+                    a(href="mailto:tomilova_mv@sokolniki.com").contacts__person-mall tomilova_mv@sokolniki.com
+
+            h2.page-heading-1 Схема проезда
+
+            .contacts__text-wrap
+                .contacts__text-item
+                    img(src="./assets/images/icon-contact-01.svg", alt="")
+                    span 107014, Москва, 5-й Лучевой просек, дом 7, строение 1  (павильоны 3, 11)
+                .contacts__text-item
+                    img(src="./assets/images/icon-contact-02.svg", alt="")
+                    a(href="mailto:") info@krestyanskiy-mir.ru
+                .contacts__text-item
+                    img(src="./assets/images/icon-contact-03.svg", alt="")
+                    a(href="tel:+74959950595") +7 (495) 995-05-95
+
+            .contacts__map-wrap
+                img(src="./assets/images/map-2.png", alt="")
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A74b19f391d2605261fdf2c3ff972216146df130f2381251f249c6149bf62bfa5&amp;width=100%25&amp;height=360&amp;lang=ru_RU&amp;scroll=false"></script>
+
+
