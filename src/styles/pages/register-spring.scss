@@ -1,31 +1,31 @@
 .contacts__wrap {
 	display: flex;
+	margin-bottom: 68px;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-bottom: 68px;
 }
 
 .contacts__text {
-	text-align: center;
-	font-size: 22px;
-	margin-bottom: 22px;
 	display: block;
-	color: $color-black-light;
 	width: 100%;
+	margin-bottom: 22px;
+	text-align: center;
+	color: $color-black-light;
+	font-size: 22px;
 }
 
 .contacts__heading {
+	width: 100%;
+	margin-bottom: 22px;
+	text-align: center;
 	font-size: 28px;
 	font-weight: 600;
-	text-align: center;
-	margin-bottom: 22px;
-	width: 100%;
 }
 
 .contacts__imput {
-	margin-bottom: 32px;
 	display: block;
 	width: 100%;
+	margin-bottom: 32px;
 
 	span {
 		margin-left: 8px;
@@ -33,14 +33,14 @@
 
 	input {
 		width: 100%;
-		border: none;
+		height: 60px;
 		margin: 8px 0 0 0;
 		padding: 6px 8px;
-		font-family: $font-Open-Sans;
-		font-weight: normal;
-		font-size: 16px;
+		border: none;
 		background-color: #e6e7e8;
-		height: 60px;
+		font-family: $font-Open-Sans;
+		font-size: 16px;
+		font-weight: normal;
 	}
 }
 
@@ -69,4 +69,14 @@
 
 .color-red {
 	color: red;
+}
+
+@media screen and (max-width: 768px) {
+	.contacts__imput_50 {
+		width: 100%;
+	}
+
+	.contacts__imput input {
+		height: 46px;
+	}
 }

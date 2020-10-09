@@ -1,9 +1,9 @@
 .search__inputs {
+	display: flex;
 	width: 100%;
 	margin: 68px 0;
-	display: flex;
-	align-items: center;
 	border-bottom: 1px solid $color-black-light;
+	align-items: center;
 
 	input {
 		width: 100%;
@@ -18,12 +18,12 @@
 	}
 
 	button {
+		cursor: pointer;
+		border: none;
+		background-color: transparent;
 		font-family: $font-Open-Sans;
 		font-size: 18px;
 		font-weight: 500;
-		border: none;
-		background-color: transparent;
-		cursor: pointer;
 	}
 }
 
@@ -46,9 +46,9 @@
 }
 
 .search__list-item {
-	margin-bottom: 48px;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 48px;
 
 	&:hover {
 		text-decoration: none;
@@ -56,14 +56,14 @@
 }
 
 .search__list-text {
-	font-size: 20px;
-	color: $color-black;
 	margin-bottom: 8px;
+	color: $color-black;
+	font-size: 20px;
 }
 
 .search__list-distance {
-	color: $color-black-light;
 	margin-bottom: 8px;
+	color: $color-black-light;
 }
 
 .search__list-url {
@@ -76,6 +76,11 @@
 
 .rodniki-poblizosti__map {
 	margin-bottom: 44px;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .katalog-rodnikov__button {
@@ -88,12 +93,12 @@
 
 .filter-letters {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
 
 	margin-right: -16px;
 	margin-bottom: -16px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .filter-letters__items {
@@ -102,13 +107,13 @@
 }
 
 .filter-letters__linc {
-	font-size: 28px;
 	color: $color-black;
+	font-size: 28px;
 }
 
 .filter-letters__linc_active {
-	color: $color-blue-light;
 	text-decoration: underline;
+	color: $color-blue-light;
 }
 
 .katalog-rodnikov__list {
@@ -122,10 +127,10 @@
 }
 
 .katalog__item {
+	margin-bottom: 32px;
+	color: $color-black;
 	font-size: 36px;
 	font-weight: 700;
-	color: $color-black;
-	margin-bottom: 32px;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -142,4 +147,30 @@
 
 .best-springs {
 	margin-bottom: 68px;
+}
+
+@media screen and (max-width: 960px) {
+	.search__total {
+		position: static;
+		margin-bottom: 18px;
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.filter-letters__linc {
+		font-size: 18px;
+	}
+
+	.search__inputs {
+		margin: 32px 0;
+	}
+
+	.katalog__item {
+		font-size: 22px;
+	}
+
+	.search__list-text {
+		font-size: 18px;
+	}
 }

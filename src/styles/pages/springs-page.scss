@@ -1,27 +1,27 @@
 .springs-page__slider-wrap {
-	padding: 0 40px;
 	position: relative;
 	margin-bottom: 32px;
+	padding: 0 40px;
 
 	.tns-controls {
 		position: absolute;
 		top: 50%;
-		left: 0;
 		right: 0;
+		left: 0;
 		display: flex;
-		justify-content: space-between;
 		transform: translateY(-50%);
+		justify-content: space-between;
 
 		button {
 			width: 20px;
 			height: 80px;
-			background-image: url("../images/arrow.svg");
-			background-color: transparent;
-			background-position: center;
-			background-repeat: no-repeat;
-			border: none;
 			margin: 0;
 			padding: 0;
+			border: none;
+			background-color: transparent;
+			background-image: url("../images/arrow.svg");
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 
 		button[data-controls="next"] {
@@ -31,8 +31,8 @@
 }
 
 .springs-page__slider-item {
-	min-height: 250px;
 	width: 100%;
+	min-height: 250px;
 	object-fit: cover;
 }
 
@@ -54,14 +54,14 @@
 }
 
 .springs-page__text-heading {
+	margin: 0 0 16px;
 	font-size: 22px;
 	font-weight: normal;
-	margin: 0 0 16px;
 }
 
 .springs-page__text {
-	color: $color-black-light;
 	margin: 0;
+	color: $color-black-light;
 
 	> span {
 		display: block;
@@ -69,28 +69,28 @@
 }
 
 .springs-page__text-img {
+	max-width: 100%;
 	max-height: 400px;
-	width: auto;
 }
 
 .add-comment {
-	border: 1px solid $color-black-light;
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 68px;
+	padding: 20px;
+	border: 1px solid $color-black-light;
 }
 
 .add-comment__heading {
+	margin: 0 0 18px 0;
 	font-size: 36px;
 	font-weight: 600;
-	margin: 0 0 18px 0;
 }
 
 .add-comment__star-wrap {
-	align-self: center;
-	margin-bottom: 18px;
 	display: flex;
+	margin-bottom: 18px;
+	align-self: center;
 
 	input[value="1"]:checked ~ label:nth-of-type(-n + 1),
 	input[value="2"]:checked ~ label:nth-of-type(-n + 2),
@@ -106,14 +106,15 @@
 }
 
 .add-comment__star {
+	display: block;
 	width: 40px;
 	height: 35px;
-	background-image: url("../images/star-off.svg");
-	background-position: center;
 	margin-right: 12px;
-	flex-shrink: 0;
-	display: block;
 	cursor: pointer;
+	background-image: url("../images/star-off.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-shrink: 0;
 }
 
 .add-comment__input {
@@ -126,8 +127,8 @@
 		border: 1px solid $color-black-light;
 		border-radius: 8px;
 		font-family: $font-Open-Sans;
-		font-weight: normal;
 		font-size: 22px;
+		font-weight: normal;
 	}
 
 	textarea {
@@ -147,8 +148,8 @@
 }
 
 .springs-page__comments-name {
-	font-size: 20px;
 	margin-right: 18px;
+	font-size: 20px;
 }
 
 .springs-page__comments-date {
@@ -158,4 +159,24 @@
 
 .springs-page__comments-text {
 	margin: 8px 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+	.springs-page__text-wrap {
+		margin-bottom: 42px;
+	}
+
+	.add-comment {
+		padding: 0;
+		border: none;
+	}
+
+	.add-comment__heading {
+		font-size: 26px;
+	}
+
+	.add-comment__input textarea,
+	.add-comment__input input {
+		font-size: 16px;
+	}
 }

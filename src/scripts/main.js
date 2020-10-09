@@ -69,12 +69,20 @@ if (document.querySelector(".springs-page__slider")) {
 	var injury = tns({
 		container: ".springs-page__slider",
 		gutter: 30,
-		items: 3,
+		items: 1,
 		mouseDrag: true,
 		loop: false,
 		speed: 300,
 		nav: false,
 		controlsText: ["", ""],
+		responsive: {
+			580: {
+				items: 2,
+			},
+			768: {
+				items: 3,
+			},
+		},
 	});
 }
 

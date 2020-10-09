@@ -37,9 +37,9 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: $font-Open-Sans;
+	font-size: 16px;
 	font-weight: normal;
 	line-height: 1.4;
-	font-size: 16px;
 }
 
 a {
@@ -69,8 +69,8 @@ ul {
 }
 
 br {
-	content: "";
 	display: block;
+	content: "";
 }
 
 .header-wrap {
@@ -83,9 +83,9 @@ main {
 }
 
 .page-heading-1 {
+	margin: 0 0 32px 0;
 	font-size: 36px;
 	font-weight: 700;
-	margin: 0 0 32px 0;
 }
 
 main,
@@ -93,8 +93,8 @@ main,
 .footer-wrap {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	flex-direction: column;
+	align-items: center;
 }
 
 .content-w {
@@ -110,45 +110,46 @@ main,
 .category-button {
 	position: relative;
 	display: flex;
+	margin-bottom: 56px;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 56px;
 }
 
 .category-button__text {
 	position: absolute;
 	left: 0;
-	font-weight: bold;
 	font-size: 18px;
+	font-weight: bold;
 }
 
 .nam-area {
-	font-weight: normal;
-	font-size: 32px;
 	margin: 0 0 8px 0;
+	font-size: 32px;
+	font-weight: normal;
 }
 
 // Хлебные крошки
 .bread-crumbs {
 	display: flex;
 	margin: 30px 0;
+	flex-wrap: wrap;
 }
 
 .bread-crumbs__item {
 	display: flex;
-	align-items: center;
 	color: $color-blue-light;
+	align-items: center;
 
 	* {
 		color: $color-blue-light;
-		font-weight: normal;
 		font-size: 14px;
+		font-weight: normal;
 	}
 
 	&::after {
-		content: "→";
-		margin: -2px 8px 0 8px;
 		display: block;
+		margin: -2px 8px 0 8px;
+		content: "→";
 	}
 
 	&:hover::after {
@@ -166,8 +167,8 @@ main,
 }
 
 .paginatio {
-	margin-right: 6px;
 	display: inline-block;
+	margin-right: 6px;
 	padding: 2px 6px;
 
 	a {
@@ -190,35 +191,35 @@ main,
 
 // Кнопки
 .button {
-	font-family: $font-Open-Sans;
-	font-weight: 600;
-	font-size: 18px;
 	display: inline-flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
 	height: 46px;
 	padding: 0 30px;
-	border: 2px solid $color-blue;
-	background-color: $color-blue;
-	color: $color-white;
-	border-radius: 8px;
 	cursor: pointer;
-	text-decoration: none;
 	transition: 150ms ease-in 0ms;
 	transition-property: background-color, border-color, color;
+	text-align: center;
+	text-decoration: none;
+	color: $color-white;
+	border: 2px solid $color-blue;
+	border-radius: 8px;
+	background-color: $color-blue;
+	font-family: $font-Open-Sans;
+	font-size: 18px;
+	font-weight: 600;
+	align-items: center;
+	justify-content: center;
 
 	&:hover {
-		background-color: lighten($color-blue, 5);
-		border-color: lighten($color-blue, 5);
 		text-decoration: none;
+		border-color: lighten($color-blue, 5);
+		background-color: lighten($color-blue, 5);
 	}
 }
 
 .button_ghost {
-	background-color: transparent;
-	border-color: $color-blue-light;
 	color: $color-blue-light;
+	border-color: $color-blue-light;
+	background-color: transparent;
 
 	&:hover {
 		color: $color-white;
@@ -241,17 +242,18 @@ main,
 .star-rating-item {
 	width: 40px;
 	height: 35px;
-	background-image: url("../images/star-off.svg");
-	background-position: center;
 	margin-right: 12px;
+	background-image: url("../images/star-off.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 	flex-shrink: 0;
 }
 
 .star-rating-number {
-	font-size: 18px;
-	color: $color-black-light;
 	width: 100%;
 	text-align: right;
+	color: $color-black-light;
+	font-size: 18px;
 }
 
 // Кнопка для видео
@@ -265,18 +267,18 @@ main,
 
 button[data-play] {
 	position: absolute;
+	z-index: 2;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 100px;
 	height: 100px;
 	margin: 0;
 	padding: 0;
+	cursor: pointer;
+	transform: translate(-50%, -50%);
 	border: none;
 	background-color: transparent;
 	background-image: url("../images/icon-play-video.svg");
-	cursor: pointer;
-	z-index: 2;
 }
 
 // fix: куда нибудь всунь
@@ -306,7 +308,24 @@ button[data-play] {
 }
 
 @media screen and (max-width: 960px) {
+	body {
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.page-heading-1 {
+		margin-bottom: 18px;
+		font-size: 22px;
+	}
 }
+
+// @media screen and (max-width: 1320px) {
+
+// }
+
+// @media screen and (max-width: 960px) {
+// }
+
+// @media screen and (max-width: 768px) {
+// }

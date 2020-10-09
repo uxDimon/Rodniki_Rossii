@@ -8,26 +8,26 @@
 
 		.tns-nav {
 			position: absolute;
-			left: 50%;
-			bottom: 60px;
 			z-index: 4;
+			bottom: 60px;
+			left: 50%;
+			display: flex;
 			width: 100%;
 			max-width: 1280px;
 			margin: 0 auto;
 			transform: translateX(-50%);
-			display: flex;
 			align-items: center;
 
 			button {
-				padding: 0;
-				margin: 0 12px 0 0;
-				background-color: $color-white;
-				border: 0;
 				width: 10px;
 				height: 10px;
-				border-radius: 20px;
+				margin: 0 12px 0 0;
+				padding: 0;
 				transition: 200ms ease-in-out 0ms;
 				transition-property: width, height;
+				border: 0;
+				border-radius: 20px;
+				background-color: $color-white;
 
 				&:last-child {
 					margin-right: 0;
@@ -43,47 +43,84 @@
 }
 
 .tns-horizontal.tns-subpixel > .slider-main__item {
-	width: 100%;
-	height: 100%;
 	position: relative;
-	overflow: hidden;
 	// height: 700px;
 	display: inline-flex;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
 	align-items: center;
 	justify-content: center;
 
 	&::before {
 		position: absolute;
-		content: "";
+		z-index: 2;
 		top: 0;
 		right: 0;
 		left: 0;
 		height: 50%;
+		content: "";
 		background: linear-gradient(180deg, #231f20 0%, rgba(35, 31, 32, 0) 100%);
-		z-index: 2;
 	}
 }
 
 .slider-main__img {
+	z-index: 1;
 	// position: absolute;
 	display: block;
 	width: 100%;
 	height: auto;
-	z-index: 1;
 }
 
 .slider-main__text {
 	position: absolute;
-	left: 50%;
+
+	z-index: 3;
 	top: 100px;
-	transform: translateX(-50%);
+	left: 50%;
 	display: inline-block;
 	width: 100%;
 	max-width: 1280px;
 	padding-right: 640px;
+	transform: translateX(-50%);
+	color: $color-white;
 	font-size: 27px;
 	font-weight: 600px;
-	color: $color-white;
+}
 
-	z-index: 3;
+@media screen and (max-width: 1320px) {
+}
+
+@media screen and (max-width: 960px) {
+	.slider-main__wrap {
+		margin-top: 0;
+	}
+
+	.slider-main__text {
+		display: none;
+	}
+
+	.slider-main__wrap .tns-outer .tns-nav {
+		bottom: 20px;
+		padding: 0 20px;
+	}
+
+	.tns-horizontal.tns-subpixel > .slider-main__item::before {
+		content: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.category-button {
+		margin-right: -20px;
+		flex-wrap: wrap;
+
+		* {
+			margin-right: 20px;
+		}
+	}
+
+	.category-button__text {
+		position: static;
+	}
 }

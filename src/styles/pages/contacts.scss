@@ -1,8 +1,7 @@
 .contacts__person-wrap {
 	display: flex;
-	justify-content: space-around;
-	margin: 0 10px;
 	margin-bottom: 68px;
+	justify-content: space-around;
 }
 
 .contacts__person {
@@ -16,8 +15,8 @@
 }
 
 .contacts__person-name {
-	font-size: 24px;
 	margin-bottom: 16px;
+	font-size: 24px;
 }
 
 .contacts__person-position,
@@ -36,8 +35,8 @@
 
 .contacts__text-item {
 	display: flex;
-	align-items: center;
 	margin-bottom: 22px;
+	align-items: center;
 
 	&:last-child {
 		margin-bottom: 0;
@@ -55,10 +54,37 @@
 
 .contacts__map-wrap {
 	display: flex;
-	margin-bottom: 68px;
 	height: 360px;
+	margin-bottom: 68px;
 
 	img {
+		width: 100%;
+		max-width: 500px;
 		flex-shrink: 0;
+	}
+}
+
+@media screen and (max-width: 1320px) {
+}
+
+@media screen and (max-width: 960px) {
+	.contacts__map-wrap {
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.contacts__person-wrap {
+		flex-direction: column;
+	}
+
+	.contacts__person {
+		margin-bottom: 38px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
