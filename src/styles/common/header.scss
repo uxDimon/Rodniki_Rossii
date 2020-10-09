@@ -9,6 +9,12 @@
 	margin-right: 50px;
 }
 
+.main-logo_white {
+	display: none;
+	flex-shrink: 0;
+	margin-right: 50px;
+}
+
 .header__body {
 	width: 100%;
 }
@@ -29,6 +35,12 @@
 .header__social-wrap {
 	display: flex;
 	align-items: center;
+}
+
+.header__social-wrap_menu {
+	display: none;
+	justify-content: center;
+	margin: 20px;
 }
 
 .header__social-item {
@@ -78,6 +90,10 @@
 	svg {
 		width: 30px;
 		height: 30px;
+	}
+
+	span {
+		display: none;
 	}
 }
 
@@ -158,6 +174,255 @@
 	color: $color-white;
 	font-weight: 600;
 	font-size: 23px;
-	line-height: 31px;
+	line-height: 1.4;
 	text-align: center;
+}
+
+.burger-botton {
+	display: none;
+	width: 34px;
+	height: 24px;
+	padding: 0;
+	border: none;
+	margin: 0 0 0 30px;
+	background-color: transparent;
+	cursor: pointer;
+	position: relative;
+
+	&::before,
+	&::after,
+	span {
+		width: 100%;
+		height: 2px;
+		background-color: $color-white;
+		border-radius: 2px;
+		display: block;
+		transition: 200ms ease-in-out 0ms;
+		transition-property: top, bottom, opacity, transform;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+}
+
+.burger-botton_active {
+	span {
+		opacity: 0;
+	}
+
+	&::before {
+		top: 50%;
+		transform: rotate(45deg) translateY(-50%);
+	}
+
+	&::after {
+		bottom: 50%;
+		transform: rotate(-45deg) translateY(50%);
+	}
+}
+
+@media screen and (max-width: 1320px) {
+}
+
+@media screen and (max-width: 1120px) {
+	.main-logo {
+		width: 200px;
+	}
+
+	.header__menu-linc {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.burger-botton {
+		display: block;
+	}
+	.main-logo {
+		display: none;
+	}
+
+	.main-logo_white {
+		display: block;
+		width: 100px;
+		margin-right: 0;
+	}
+
+	.header-wrap {
+		background-color: $color-blue-light;
+	}
+
+	.header__body-top {
+		margin-bottom: 0;
+
+		.header__tel {
+			display: none;
+		}
+
+		.header__social-wrap {
+			display: none;
+		}
+	}
+
+	.header__top {
+		position: relative;
+		padding: 10px 0;
+	}
+
+	.header__body {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.header__lang-linc {
+		width: auto;
+		height: auto;
+		text-transform: uppercase;
+		color: $color-white;
+		font-weight: 600;
+
+		img {
+			display: none;
+		}
+
+		span {
+			display: inline-block;
+		}
+	}
+
+	.header__body-bot {
+		position: absolute;
+		flex-direction: column;
+		align-items: stretch;
+		width: max-content;
+		flex-shrink: 0;
+		left: 50%;
+		top: 100%;
+		transform: translateX(-50%);
+
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: $color-blue-light;
+			top: -2px;
+			bottom: 0;
+			width: 100vw;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.header__body-bot-button-wrap {
+		flex-direction: column;
+		align-items: stretch;
+		z-index: 1;
+
+		* {
+			margin-right: 0;
+			margin-bottom: 10px;
+			height: 36px;
+		}
+	}
+
+	.header__search {
+		width: 100%;
+		margin: 20px 0;
+		position: relative;
+		z-index: 1;
+
+		&::after {
+			content: "";
+			position: absolute;
+			background-color: $color-white;
+			top: -20px;
+			bottom: -20px;
+			width: 100vw;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	.header__search-input {
+		width: 100%;
+		opacity: 1;
+
+		&:not(:placeholder-shown),
+		&:focus {
+			width: 100%;
+		}
+	}
+
+	.header__search img {
+		width: 25px;
+		height: 25px;
+		top: 11px;
+	}
+
+	.header__body-bot-button-wrap .button {
+		border-color: $color-white;
+		background-color: $color-white;
+		color: $color-blue-light;
+	}
+
+	.header__menu {
+		position: absolute;
+		top: 230px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: max-content;
+	}
+
+	.header__menu-list {
+		flex-direction: column;
+		align-items: stretch;
+		height: auto;
+
+		br {
+			display: none;
+		}
+	}
+
+	.header__menu-item {
+		padding: 10px 20px;
+		border-bottom: 1px solid transparentize($color-white, 0.5);
+	}
+
+	.header__menu-linc {
+		font-weight: normal;
+		text-align: left;
+	}
+
+	.header__social-wrap_menu {
+		display: flex;
+	}
+
+	.header__body-bot-button,
+	.header__search,
+	.header__menu {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+}
+
+.active-block {
+	display: block;
+}
+
+.active-inline-flex {
+	display: inline-flex;
 }
