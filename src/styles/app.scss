@@ -21,6 +21,18 @@ $font-Open-Sans: "Open Sans", sans-serif;
 	outline: none;
 }
 
+.map {
+	margin: 40px;
+
+	li {
+		margin-bottom: 10px;
+	}
+
+	a {
+		color: $color-blue;
+	}
+}
+
 body {
 	margin: 0;
 	padding: 0;

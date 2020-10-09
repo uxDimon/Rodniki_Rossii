@@ -204,21 +204,21 @@ const videoWrap = document.querySelectorAll(".video-wrap"),
 // 	});
 // });
 
-// for (const vw of videoWrap) {
-// 	vw.insertAdjacentHTML("beforeend", playB);
-// 	const video = vw.querySelector("video");
-// 	const buttonP = vw.querySelector("button[data-play]");
+for (const vw of videoWrap) {
+	vw.insertAdjacentHTML("beforeend", playB);
+	const video = vw.querySelector("video");
+	const buttonP = vw.querySelector("button[data-play]");
 
-// 	buttonP.addEventListener("click", () => {
-// 		video.play();
-// 		console.log("1");
-// 	});
-// 	video.addEventListener("play", () => {
-// 		buttonP.style.opacity = 0;
-// 		video.setAttribute("controls", "controls");
-// 	});
-// 	video.addEventListener("ended", () => {
-// 		buttonP.style.opacity = 1;
-// 		video.removeAttribute("controls");
-// 	});
-// }
+	buttonP.addEventListener("click", () => {
+		video.play();
+		console.log("1");
+	});
+	video.addEventListener("play", () => {
+		buttonP.style.opacity = 0;
+		video.setAttribute("controls", "controls");
+	});
+	video.addEventListener("ended", () => {
+		buttonP.style.opacity = 1;
+		video.removeAttribute("controls");
+	});
+}
