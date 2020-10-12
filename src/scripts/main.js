@@ -11,6 +11,22 @@ burgerButton.addEventListener("click", () => {
 	burgerButton.classList.toggle("burger-botton_active");
 });
 
+// popup
+const popup = document.querySelector('[data-popup]'),
+	popupOpen = document.querySelectorAll('[data-popup-open]'),
+	popupClose = document.querySelectorAll('[data-popup-close]');
+
+for (const po of popupOpen) {
+	po.addEventListener("click", ()=>{
+		popup.style.display = 'block'
+	})
+}
+for (const po of popupClose) {
+	po.addEventListener("click", ()=>{
+		popup.style.display = 'none'
+	})
+}
+
 // // Табы
 // const tabsButton = document.querySelectorAll(".stages-work__button");
 // const tabsContainerSW = document.querySelectorAll(".stages-work__tabs-item");

@@ -31,7 +31,9 @@
               <button class="burger-botton" data-burger><span></span></button>
             </div>
             <div class="header__body-bot">
-              <div class="header__body-bot-button-wrap"><a class="button button_ghost" href="#">Родники поблизости</a><a class="button button_ghost header__body-bot-button" href="#">Подписка на рассылку</a></div>
+              <div class="header__body-bot-button-wrap"><a class="button button_ghost" href="#">Родники поблизости</a>
+                <button class="button button_ghost header__body-bot-button" data-popup-open>Подписка на рассылку</button>
+              </div>
               <form class="header__search">
                 <label class="header__search-label"><img src="./assets/images/icon-search.svg" alt="search">
                   <input class="header__search-input" type="search" name="" placeholder="Поиск">
@@ -85,6 +87,23 @@
         </ul>
       </div>
     </footer>
+    <div class="popup__wrap" data-popup>
+      <div class="popup">
+        <button class="popup__close-button" data-popup-close></button>
+        <h2 class="popup__h">Подпишитесь на полезные статьи</h2>
+        <p class="popup__text">Подпишитесь, чтобы получать полезные сатьи, видео и презентации, а также афишу важных событий</p>
+        <form class="popup__input-wrap">
+          <label class="add-comment__input popup__input">
+            <input type="text" name="name" placeholder="Имя">
+          </label>
+          <label class="add-comment__input popup__input">
+            <input type="email" name="email" placeholder="E-mail">
+          </label>
+          <button class="button popup__button" type="submit">Подписаться</button>
+        </form><span class="popup__conf">Заполняя форму, вы соглашаетесь с правилами обработки персональных данных.</span><span class="popup__number">Нас читает уже 33 333 человек!</span>
+      </div>
+      <div class="popup__close" data-popup-close></div>
+    </div>
     <script src="assets/scripts/imask.min.js"></script>
     <script src="assets/scripts/tiny-slider.js"></script>
     <script src="assets/scripts/accordion.min.js"></script>

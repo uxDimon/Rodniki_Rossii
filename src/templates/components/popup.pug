@@ -1,0 +1,16 @@
+div(data-popup).popup__wrap
+    .popup
+        button(data-popup-close).popup__close-button
+        h2.popup__h Подпишитесь на полезные статьи
+        p.popup__text Подпишитесь, чтобы получать полезные сатьи, видео и презентации, а также афишу важных событий
+        form.popup__input-wrap
+            //- input(type="text", name="" placeholder='Имя').popup__input
+            //- input(type="email", name="" placeholder='E-mail').popup__input
+            label.add-comment__input.popup__input
+                input(type="text", name="name" placeholder='Имя')
+            label.add-comment__input.popup__input
+                input(type="email", name="email" placeholder='E-mail')
+            button(type="submit").button.popup__button Подписаться
+        span.popup__conf Заполняя форму, вы соглашаетесь с правилами обработки персональных данных.
+        span.popup__number Нас читает уже 33 333 человек!
+    div(data-popup-close).popup__close
