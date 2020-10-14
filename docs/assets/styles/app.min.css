@@ -173,15 +173,12 @@ ul {
   padding: 0;
   list-style: none; }
 
-br {
-  display: block;
-  content: ""; }
-
 .header-wrap {
   position: relative;
   z-index: 10; }
 
 main {
+  position: relative;
   z-index: 1; }
 
 .page-heading-1 {

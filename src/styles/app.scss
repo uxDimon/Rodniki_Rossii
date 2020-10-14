@@ -68,17 +68,13 @@ ul {
 	list-style: none;
 }
 
-br {
-	display: block;
-	content: "";
-}
-
 .header-wrap {
 	position: relative;
 	z-index: 10;
 }
 
 main {
+	position: relative;
 	z-index: 1;
 }
 
