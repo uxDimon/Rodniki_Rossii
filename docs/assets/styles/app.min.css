@@ -728,7 +728,14 @@ button[data-play] {
   transform: translateX(-50%);
   color: #ffffff;
   font-size: 27px;
-  font-weight: 600px; }
+  font-weight: 600; }
+
+@media screen and (max-width: 1320px) {
+  .slider-main__text {
+    margin-left: 20px;
+    padding-right: 0; }
+  .slider-main__wrap .tns-outer .tns-nav {
+    margin-left: 20px; } }
 
 @media screen and (max-width: 960px) {
   .slider-main__wrap {
