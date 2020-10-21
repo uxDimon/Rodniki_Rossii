@@ -11,6 +11,7 @@
 		display: flex;
 		transform: translateY(-50%);
 		justify-content: space-between;
+		z-index: 2;
 
 		button {
 			width: 20px;
@@ -143,6 +144,10 @@
 	align-self: flex-end;
 }
 
+.springs-page__button {
+	margin-bottom: 68px;
+}
+
 .springs-page__comments {
 	margin-bottom: 68px;
 }
@@ -178,5 +183,24 @@
 	.add-comment__input textarea,
 	.add-comment__input input {
 		font-size: 16px;
+	}
+
+	.springs-page__slider-wrap {
+		padding: 0;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.springs-page__audio audio {
+		width: 100%;
+	}
+
+	.springs-page__slider-wrap .tns-controls {
+		right: 20px;
+		left: 20px;
+
+		button {
+			background-image: url("../images/arrow-w.svg");
+		}
 	}
 }

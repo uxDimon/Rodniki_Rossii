@@ -10,6 +10,25 @@
 
 	color: $color-black;
 	font-weight: 600;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.information__list-text {
+	margin-bottom: 8px;
+}
+
+.information__list-text2 {
+	margin-bottom: 8px;
+	color: $color-black-light;
+	font-size: 12px;
+}
+
+.information__list-button {
+	align-self: flex-end;
+	height: 32px;
+	padding: 0 24px;
 }
 
 .information__list-img {

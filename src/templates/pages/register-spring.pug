@@ -11,39 +11,39 @@ block content
             form.contacts__wrap
                 span.contacts__text Мы постоянно пополняем каталог родников, станьте участником проека!
                 h2.contacts__heading Как с вами связаться
-                lable.contacts__imput
+                label.contacts__imput
                     span ФИО
                     input(type="text", name="name")
 
-                lable.contacts__imput.contacts__imput_50
+                label.contacts__imput.contacts__imput_50
                     span Телефон
                     input(type="tel", name="tel")
 
-                lable.contacts__imput.contacts__imput_50
+                label.contacts__imput.contacts__imput_50
                     span E-mail
                     input(type="email", name="email")
 
                 h2.contacts__heading Информация о роднике
-                lable.contacts__imput
+                label.contacts__imput
                     span Адрес родника (Регион, город, деревня и проч.)<span class='color-red'>*</span>
                     input(type="text", name="name", required)
                 
                 span.contacts__span GPS координаты родника<span class='color-red'>*</span>
-                lable.contacts__imput.contacts__imput_50
+                label.contacts__imput.contacts__imput_50
                     span Широта
                     input(type="number", name="latitude", required)
 
-                lable.contacts__imput.contacts__imput_50
+                label.contacts__imput.contacts__imput_50
                     span Долгота
                     input(type="number", name="longitude", required)
 
-                lable.contacts__imput
+                label.contacts__imput.imput_file
+                    input(type="file", name="file1" size='10000', accept=".jpg, .jpeg, .png, .pdf", required, onchange='uploadFile(this)')
                     span Прикрепить фото<span class='color-red'>*</span>
-                    input(type="file", name="file1" size='10000', accept=".jpg, .jpeg, .png, .pdf", required)
                 
-                lable.contacts__imput
-                    span Прикрепить фото<span class='color-red'>*</span>
-                    input(type="file", name="file2" size='10000', accept=".jpg, .jpeg, .png, .pdf", required)
+                label.contacts__imput.imput_file
+                    input(type="file", name="file2" size='10000', accept=".jpg, .jpeg, .png, .pdf",placeholder="12312", required, onchange='uploadFile(this)') 
+                    span Прикрепить документ (история родника, химический анализ воды)<span class='color-red'>*</span>
 
                 button(type="submit").button.contacts__button Зарегистрировать родник
 

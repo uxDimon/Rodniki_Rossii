@@ -124,6 +124,13 @@ main,
 	font-weight: normal;
 }
 
+.content-box .nam-area {
+}
+
+.katalog-rodnikov-page .nam-area {
+	color: $color-blue-light;
+}
+
 // Хлебные крошки
 .bread-crumbs {
 	display: flex;
@@ -222,6 +229,11 @@ main,
 	}
 }
 
+.button_blue-light {
+	background-color: $color-blue-light;
+	border-color: $color-blue-light;
+}
+
 .star-rating {
 	display: flex;
 	align-items: center;
@@ -246,8 +258,8 @@ main,
 }
 
 .star-rating-number {
-	width: 100%;
-	text-align: right;
+	margin-left: 20px;
+	text-align: left;
 	color: $color-black-light;
 	font-size: 18px;
 }
@@ -307,6 +319,10 @@ button[data-play] {
 @media screen and (max-width: 960px) {
 	body {
 		font-size: 14px;
+	}
+
+	.content-box .nam-area {
+		text-align: center;
 	}
 }
 

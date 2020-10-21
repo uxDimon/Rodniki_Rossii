@@ -12,19 +12,24 @@ burgerButton.addEventListener("click", () => {
 });
 
 // popup
-const popup = document.querySelector('[data-popup]'),
-	popupOpen = document.querySelectorAll('[data-popup-open]'),
-	popupClose = document.querySelectorAll('[data-popup-close]');
+const popup = document.querySelector("[data-popup]"),
+	popupOpen = document.querySelectorAll("[data-popup-open]"),
+	popupClose = document.querySelectorAll("[data-popup-close]");
 
 for (const po of popupOpen) {
-	po.addEventListener("click", ()=>{
-		popup.style.display = 'block'
-	})
+	po.addEventListener("click", () => {
+		popup.style.display = "block";
+	});
 }
 for (const po of popupClose) {
-	po.addEventListener("click", ()=>{
-		popup.style.display = 'none'
-	})
+	po.addEventListener("click", () => {
+		popup.style.display = "none";
+	});
+}
+
+// input file
+function uploadFile(target) {
+	target.parentNode.querySelector("span").innerHTML = target.files[0].name;
 }
 
 // // Табы
