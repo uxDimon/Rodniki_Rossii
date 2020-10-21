@@ -220,6 +220,9 @@ main,
   font-size: 32px;
   font-weight: normal; }
 
+.katalog-rodnikov-page .nam-area {
+  color: #44c7f4; }
+
 .bread-crumbs {
   display: flex;
   margin: 30px 0;
@@ -291,6 +294,10 @@ main,
   .button_ghost:hover {
     color: #ffffff; }
 
+.button_blue-light {
+  background-color: #44c7f4;
+  border-color: #44c7f4; }
+
 .star-rating {
   display: flex;
   align-items: center; }
@@ -311,8 +318,8 @@ main,
   flex-shrink: 0; }
 
 .star-rating-number {
-  width: 100%;
-  text-align: right;
+  margin-left: 20px;
+  text-align: left;
   color: #929497;
   font-size: 18px; }
 
@@ -454,7 +461,10 @@ button[data-play] {
   border: 2px solid #44c7f4;
   border-radius: 8px;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 8px;
+  -webkit-box-shadow: none; }
   .header__search-input:not(:-moz-placeholder-shown) {
     width: 500px;
     opacity: 1;
@@ -539,7 +549,7 @@ button[data-play] {
     display: none; }
   .main-logo_white {
     display: block;
-    width: 100px;
+    width: 140px;
     margin-right: 0; }
   .header-wrap {
     background-color: #44c7f4; }
@@ -627,7 +637,7 @@ button[data-play] {
     background-color: #ffffff; }
   .header__menu {
     position: absolute;
-    top: 230px;
+    top: 246px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -651,7 +661,13 @@ button[data-play] {
   .header__body-bot-button,
   .header__search,
   .header__menu {
-    display: none; } }
+    display: none; }
+  .header__social-linc {
+    width: 40px;
+    height: 40px; }
+    .header__social-linc img {
+      width: 100%;
+      height: 100%; } }
 
 .active-block {
   display: block; }
@@ -817,7 +833,7 @@ button[data-play] {
   flex-direction: column;
   width: 100%;
   padding: 28px 0;
-  background-color: #005a98;
+  background-color: #44c7f4;
   align-items: center; }
 
 .main-number {
@@ -1104,7 +1120,8 @@ button[data-play] {
     left: 0;
     display: flex;
     transform: translateY(-50%);
-    justify-content: space-between; }
+    justify-content: space-between;
+    z-index: 2; }
     .springs-page__slider-wrap .tns-controls button {
       width: 20px;
       height: 80px;
@@ -1207,6 +1224,9 @@ button[data-play] {
 .add-comment__button {
   align-self: flex-end; }
 
+.springs-page__button {
+  margin-bottom: 68px; }
+
 .springs-page__comments {
   margin-bottom: 68px; }
 
@@ -1231,7 +1251,18 @@ button[data-play] {
     font-size: 26px; }
   .add-comment__input textarea,
   .add-comment__input input {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .springs-page__slider-wrap {
+    padding: 0;
+    margin-left: -20px;
+    margin-right: -20px; }
+  .springs-page__audio audio {
+    width: 100%; }
+  .springs-page__slider-wrap .tns-controls {
+    right: 20px;
+    left: 20px; }
+    .springs-page__slider-wrap .tns-controls button {
+      background-image: url("../images/arrow-w.svg"); } }
 
 .contacts__person-wrap {
   display: flex;
@@ -1339,6 +1370,19 @@ button[data-play] {
   .contacts__imput_50:last-of-type {
     margin-right: 0; }
 
+.imput_file {
+  width: 100%;
+  height: 60px;
+  background-color: #e6e7e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .imput_file span {
+    text-align: center; }
+  .imput_file input {
+    display: none; }
+
 .contacts__span {
   width: 100%;
   margin-bottom: 8px;
@@ -1346,7 +1390,9 @@ button[data-play] {
 
 .contacts__button {
   width: 100%;
-  border-radius: 0; }
+  border-radius: 0;
+  background-color: #44c7f4;
+  border-color: #44c7f4; }
 
 .contacts__button {
   margin-bottom: 32px; }
@@ -1369,7 +1415,22 @@ button[data-play] {
   width: 23%;
   margin: 30px 1%;
   color: #231f20;
-  font-weight: 600; }
+  font-weight: 600;
+  display: flex;
+  flex-direction: column; }
+
+.information__list-text {
+  margin-bottom: 8px; }
+
+.information__list-text2 {
+  margin-bottom: 8px;
+  color: #929497;
+  font-size: 12px; }
+
+.information__list-button {
+  align-self: flex-end;
+  height: 32px;
+  padding: 0 24px; }
 
 .information__list-img {
   width: 100%;
@@ -1686,7 +1747,9 @@ button[data-play] {
 
 @media screen and (max-width: 960px) {
   body {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .content-box .nam-area {
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   .page-heading-1 {
