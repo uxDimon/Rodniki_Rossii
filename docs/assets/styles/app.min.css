@@ -772,7 +772,8 @@ button[data-play] {
     margin-right: -20px;
     flex-wrap: wrap; }
     .category-button * {
-      margin-right: 20px; }
+      margin-right: 20px;
+      margin-bottom: 10px; }
   .category-button__text {
     position: static;
     top: auto;
