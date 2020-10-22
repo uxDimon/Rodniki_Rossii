@@ -216,7 +216,8 @@ main,
   font-weight: bold;
   top: 50%;
   transform: translateY(-50%);
-  margin: 0; }
+  margin: 0;
+  width: 37%; }
 
 .nam-area {
   margin: 0 0 8px 0;
@@ -777,7 +778,8 @@ button[data-play] {
   .category-button__text {
     position: static;
     top: auto;
-    transform: none; } }
+    transform: none;
+    width: 100%; } }
 
 .participant {
   display: flex; }
@@ -1596,7 +1598,7 @@ button[data-play] {
     margin-top: 28px;
     margin-bottom: 28px; }
   .category-button {
-    margin-bottom: 28px; }
+    margin-bottom: 18px; }
   .cards_photo .cards__photo-text {
     font-size: 18px; } }
 
