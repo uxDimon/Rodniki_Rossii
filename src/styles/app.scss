@@ -116,15 +116,15 @@ main,
 	left: 0;
 	font-size: 18px;
 	font-weight: bold;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0;
 }
 
 .nam-area {
 	margin: 0 0 8px 0;
 	font-size: 32px;
 	font-weight: normal;
-}
-
-.content-box .nam-area {
 }
 
 .katalog-rodnikov-page .nam-area {
@@ -319,10 +319,6 @@ button[data-play] {
 @media screen and (max-width: 960px) {
 	body {
 		font-size: 14px;
-	}
-
-	.content-box .nam-area {
-		text-align: center;
 	}
 }
 

@@ -213,7 +213,10 @@ main,
   position: absolute;
   left: 0;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0; }
 
 .nam-area {
   margin: 0 0 8px 0;
@@ -771,7 +774,9 @@ button[data-play] {
     .category-button * {
       margin-right: 20px; }
   .category-button__text {
-    position: static; } }
+    position: static;
+    top: auto;
+    transform: none; } }
 
 .participant {
   display: flex; }
@@ -1747,9 +1752,7 @@ button[data-play] {
 
 @media screen and (max-width: 960px) {
   body {
-    font-size: 14px; }
-  .content-box .nam-area {
-    text-align: center; } }
+    font-size: 14px; } }
 
 @media screen and (max-width: 768px) {
   .page-heading-1 {
