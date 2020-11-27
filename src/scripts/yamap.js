@@ -1,5 +1,3 @@
-// Настройки Яндекс карты
-// https://yandex.ru/dev/maps/jsapi/doc/2.1/quick-start/index.html/?from=techmapsmain
 ymaps.ready(init);
 
 function init() {
@@ -28,8 +26,9 @@ function init() {
 	myMap.geoObjects.add(objectManager);
 
 	$.ajax({
-		url: "data.json",
+		url: "./data.json",
 	}).done(function (data) {
 		objectManager.add(data);
 	});
+	console.log(1);
 }
